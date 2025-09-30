@@ -1,0 +1,362 @@
+{
+  "Version": 1,
+  "Hash": "/J5W2C03r3EVP2aThcgC4h7UZIWNDXX4HtZ75HwkgaY=",
+  "Source": "LoginApp",
+  "BasePath": "_content/LoginApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "LoginApp/wwwroot",
+      "Source": "LoginApp",
+      "ContentRoot": "/Users/sashamaksyutenko/Downloads/LoginApp/wwwroot/",
+      "BasePath": "_content/LoginApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/sashamaksyutenko/Downloads/LoginApp/obj/Debug/net9.0/compressed/ywung71v8u-tvwxjfrdw4.gz",
+      "SourceId": "LoginApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/sashamaksyutenko/Downloads/LoginApp/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/LoginApp",
+      "RelativePath": "css/site#[.{fingerprint=tvwxjfrdw4}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/sashamaksyutenko/Downloads/LoginApp/wwwroot/css/site.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "n01nojffce",
+      "Integrity": "GacyPsUZDI/LRBh3MwSuiYkTwvwEUgN7/h9nnxBwrjA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/sashamaksyutenko/Downloads/LoginApp/wwwroot/css/site.css"
+    },
+    {
+      "Identity": "/Users/sashamaksyutenko/Downloads/LoginApp/wwwroot/css/site.css",
+      "SourceId": "LoginApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/sashamaksyutenko/Downloads/LoginApp/wwwroot/",
+      "BasePath": "_content/LoginApp",
+      "RelativePath": "css/site#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tvwxjfrdw4",
+      "Integrity": "R1yxLVvOr8v3tYdBHEY83GQNn24Zk8yKKNneMOSmV6Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/site.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/site.css",
+      "AssetFile": "/Users/sashamaksyutenko/Downloads/LoginApp/obj/Debug/net9.0/compressed/ywung71v8u-tvwxjfrdw4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002036659878"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "490"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GacyPsUZDI/LRBh3MwSuiYkTwvwEUgN7/h9nnxBwrjA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 25 Sep 2025 13:10:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"R1yxLVvOr8v3tYdBHEY83GQNn24Zk8yKKNneMOSmV6Q=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R1yxLVvOr8v3tYdBHEY83GQNn24Zk8yKKNneMOSmV6Q="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "/Users/sashamaksyutenko/Downloads/LoginApp/wwwroot/css/site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1092"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R1yxLVvOr8v3tYdBHEY83GQNn24Zk8yKKNneMOSmV6Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 25 Sep 2025 13:10:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R1yxLVvOr8v3tYdBHEY83GQNn24Zk8yKKNneMOSmV6Q="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "/Users/sashamaksyutenko/Downloads/LoginApp/obj/Debug/net9.0/compressed/ywung71v8u-tvwxjfrdw4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "490"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GacyPsUZDI/LRBh3MwSuiYkTwvwEUgN7/h9nnxBwrjA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 25 Sep 2025 13:10:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GacyPsUZDI/LRBh3MwSuiYkTwvwEUgN7/h9nnxBwrjA="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.tvwxjfrdw4.css",
+      "AssetFile": "/Users/sashamaksyutenko/Downloads/LoginApp/obj/Debug/net9.0/compressed/ywung71v8u-tvwxjfrdw4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002036659878"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "490"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GacyPsUZDI/LRBh3MwSuiYkTwvwEUgN7/h9nnxBwrjA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 25 Sep 2025 13:10:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"R1yxLVvOr8v3tYdBHEY83GQNn24Zk8yKKNneMOSmV6Q=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tvwxjfrdw4"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R1yxLVvOr8v3tYdBHEY83GQNn24Zk8yKKNneMOSmV6Q="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.tvwxjfrdw4.css",
+      "AssetFile": "/Users/sashamaksyutenko/Downloads/LoginApp/wwwroot/css/site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1092"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R1yxLVvOr8v3tYdBHEY83GQNn24Zk8yKKNneMOSmV6Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 25 Sep 2025 13:10:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tvwxjfrdw4"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R1yxLVvOr8v3tYdBHEY83GQNn24Zk8yKKNneMOSmV6Q="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.tvwxjfrdw4.css.gz",
+      "AssetFile": "/Users/sashamaksyutenko/Downloads/LoginApp/obj/Debug/net9.0/compressed/ywung71v8u-tvwxjfrdw4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "490"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GacyPsUZDI/LRBh3MwSuiYkTwvwEUgN7/h9nnxBwrjA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 25 Sep 2025 13:10:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tvwxjfrdw4"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GacyPsUZDI/LRBh3MwSuiYkTwvwEUgN7/h9nnxBwrjA="
+        }
+      ]
+    }
+  ]
+}

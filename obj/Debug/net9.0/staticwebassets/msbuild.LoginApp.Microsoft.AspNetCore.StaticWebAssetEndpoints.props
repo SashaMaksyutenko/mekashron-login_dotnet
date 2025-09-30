@@ -1,0 +1,16 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/LoginApp/css/site.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-R1yxLVvOr8v3tYdBHEY83GQNn24Zk8yKKNneMOSmV6Q="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1092"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022R1yxLVvOr8v3tYdBHEY83GQNn24Zk8yKKNneMOSmV6Q=\u0022"},{"Name":"Last-Modified","Value":"Thu, 25 Sep 2025 13:10:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/LoginApp/css/site.tvwxjfrdw4.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tvwxjfrdw4"},{"Name":"integrity","Value":"sha256-R1yxLVvOr8v3tYdBHEY83GQNn24Zk8yKKNneMOSmV6Q="},{"Name":"label","Value":"_content/LoginApp/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1092"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022R1yxLVvOr8v3tYdBHEY83GQNn24Zk8yKKNneMOSmV6Q=\u0022"},{"Name":"Last-Modified","Value":"Thu, 25 Sep 2025 13:10:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>
