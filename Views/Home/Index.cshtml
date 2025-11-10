@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container py-5">
+    <h2 class="mb-4">Welcome</h2>
+
+    @if (!string.IsNullOrWhiteSpace(ViewBag.Message))
+    {
+        <div class="alert alert-success">
+            @ViewBag.Message
+        </div>
+    }
+
+    <p>You are now logged in.</p>
+</div>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sashamaksyutenko/Downloads/LoginApp/LoginApp.csproj": {}
+    "/Users/sashamaksyutenkoadmin/Documents/LoginApp/LoginApp.csproj": {}
   },
   "projects": {
-    "/Users/sashamaksyutenko/Downloads/LoginApp/LoginApp.csproj": {
+    "/Users/sashamaksyutenkoadmin/Documents/LoginApp/LoginApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sashamaksyutenko/Downloads/LoginApp/LoginApp.csproj",
+        "projectUniqueName": "/Users/sashamaksyutenkoadmin/Documents/LoginApp/LoginApp.csproj",
         "projectName": "LoginApp",
-        "projectPath": "/Users/sashamaksyutenko/Downloads/LoginApp/LoginApp.csproj",
+        "projectPath": "/Users/sashamaksyutenkoadmin/Documents/LoginApp/LoginApp.csproj",
         "packagesPath": "/Users/sashamaksyutenko/.nuget/packages/",
-        "outputPath": "/Users/sashamaksyutenko/Downloads/LoginApp/obj/",
+        "outputPath": "/Users/sashamaksyutenkoadmin/Documents/LoginApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sashamaksyutenko/.nuget/NuGet/NuGet.Config"

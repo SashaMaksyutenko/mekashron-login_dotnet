@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/J5W2C03r3EVP2aThcgC4h7UZIWNDXX4HtZ75HwkgaY=",
+  "Hash": "jbm3tXWnNiBfca2ZR8agPfLTEVXwZJPwYHuyXDD4Xu8=",
   "Source": "LoginApp",
   "BasePath": "_content/LoginApp",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "LoginApp/wwwroot",
       "Source": "LoginApp",
-      "ContentRoot": "/Users/sashamaksyutenko/Downloads/LoginApp/wwwroot/",
+      "ContentRoot": "/Users/sashamaksyutenkoadmin/Documents/LoginApp/wwwroot/",
       "BasePath": "_content/LoginApp",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/sashamaksyutenko/Downloads/LoginApp/obj/Debug/net9.0/compressed/ywung71v8u-tvwxjfrdw4.gz",
+      "Identity": "/Users/sashamaksyutenkoadmin/Documents/LoginApp/obj/Debug/net9.0/compressed/ywung71v8u-tvwxjfrdw4.gz",
       "SourceId": "LoginApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/sashamaksyutenko/Downloads/LoginApp/obj/Debug/net9.0/compressed/",
+      "ContentRoot": "/Users/sashamaksyutenkoadmin/Documents/LoginApp/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/LoginApp",
       "RelativePath": "css/site#[.{fingerprint=tvwxjfrdw4}]?.css.gz",
       "AssetKind": "All",
@@ -28,20 +28,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "/Users/sashamaksyutenko/Downloads/LoginApp/wwwroot/css/site.css",
+      "RelatedAsset": "/Users/sashamaksyutenkoadmin/Documents/LoginApp/wwwroot/css/site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "n01nojffce",
       "Integrity": "GacyPsUZDI/LRBh3MwSuiYkTwvwEUgN7/h9nnxBwrjA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/sashamaksyutenko/Downloads/LoginApp/wwwroot/css/site.css"
+      "OriginalItemSpec": "/Users/sashamaksyutenkoadmin/Documents/LoginApp/wwwroot/css/site.css"
     },
     {
-      "Identity": "/Users/sashamaksyutenko/Downloads/LoginApp/wwwroot/css/site.css",
+      "Identity": "/Users/sashamaksyutenkoadmin/Documents/LoginApp/wwwroot/css/site.css",
       "SourceId": "LoginApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/sashamaksyutenko/Downloads/LoginApp/wwwroot/",
+      "ContentRoot": "/Users/sashamaksyutenkoadmin/Documents/LoginApp/wwwroot/",
       "BasePath": "_content/LoginApp",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -62,7 +62,7 @@
   "Endpoints": [
     {
       "Route": "css/site.css",
-      "AssetFile": "/Users/sashamaksyutenko/Downloads/LoginApp/obj/Debug/net9.0/compressed/ywung71v8u-tvwxjfrdw4.gz",
+      "AssetFile": "/Users/sashamaksyutenkoadmin/Documents/LoginApp/obj/Debug/net9.0/compressed/ywung71v8u-tvwxjfrdw4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -117,7 +117,7 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "/Users/sashamaksyutenko/Downloads/LoginApp/wwwroot/css/site.css",
+      "AssetFile": "/Users/sashamaksyutenkoadmin/Documents/LoginApp/wwwroot/css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -154,7 +154,7 @@
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "/Users/sashamaksyutenko/Downloads/LoginApp/obj/Debug/net9.0/compressed/ywung71v8u-tvwxjfrdw4.gz",
+      "AssetFile": "/Users/sashamaksyutenkoadmin/Documents/LoginApp/obj/Debug/net9.0/compressed/ywung71v8u-tvwxjfrdw4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -199,7 +199,7 @@
     },
     {
       "Route": "css/site.tvwxjfrdw4.css",
-      "AssetFile": "/Users/sashamaksyutenko/Downloads/LoginApp/obj/Debug/net9.0/compressed/ywung71v8u-tvwxjfrdw4.gz",
+      "AssetFile": "/Users/sashamaksyutenkoadmin/Documents/LoginApp/obj/Debug/net9.0/compressed/ywung71v8u-tvwxjfrdw4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -262,7 +262,7 @@
     },
     {
       "Route": "css/site.tvwxjfrdw4.css",
-      "AssetFile": "/Users/sashamaksyutenko/Downloads/LoginApp/wwwroot/css/site.css",
+      "AssetFile": "/Users/sashamaksyutenkoadmin/Documents/LoginApp/wwwroot/css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -307,7 +307,7 @@
     },
     {
       "Route": "css/site.tvwxjfrdw4.css.gz",
-      "AssetFile": "/Users/sashamaksyutenko/Downloads/LoginApp/obj/Debug/net9.0/compressed/ywung71v8u-tvwxjfrdw4.gz",
+      "AssetFile": "/Users/sashamaksyutenkoadmin/Documents/LoginApp/obj/Debug/net9.0/compressed/ywung71v8u-tvwxjfrdw4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {

@@ -1,0 +1,67 @@
+@model LoginApp.Models.RegisterModel
+@{
+  ViewData["Title"] = "Register";
+}
+
+<div class="row justify-content-center">
+  <div class="col-md-6 col-lg-4">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="text-center mb-4">Register</h3>
+        @if (ViewBag.Message != null)
+        {
+          <div class="alert alert-@ViewBag.AlertType">
+            @ViewBag.Message
+          </div>
+        }
+        <form method="post">
+          <div class="mb-3">
+            <label asp-for="FirstName" class="form-label" for="FirstName">First Name</label>
+            <input asp-for="FirstName" class="form-control" required />
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+          </div>
+          <div class="mb-3">
+            <label asp-for="LastName" class="form-label" for="LastName">Last Name</label>
+            <input asp-for="LastName" class="form-control" required />
+            <span asp-validation-for="LastName" class="text-danger"></span>
+          </div>
+          <div class="mb-3">
+            <label asp-for="Email" class="form-label" for="Email">Email</label>
+            <input asp-for="Email" type="email" class="form-control" required />
+            <span asp-validation-for="Email" class="text-danger"></span>
+          </div>
+          <div class="mb-3">
+            <label asp-for="Password" class="form-label" for="Password">Password</label>
+            <input asp-for="Password" type="password" class="form-control" required />
+            <span asp-validation-for="Password" class="text-danger"></span>
+          </div>
+          <div class="mb-3">
+            <label asp-for="MobileNo" class="form-label" for="MobileNo">Mobile No</label>
+            <input asp-for="MobileNo" type="tel" class="form-control" required />
+            <span asp-validation-for="MobileNo" class="text-danger"></span>
+          </div>
+          <div class="mb-3">
+            <label asp-for="CountryID" class="form-label" for="CountryID">Country ID</label>
+            <input asp-for="CountryID" type="number" class="form-control" required />
+            <span asp-validation-for="CountryID" class="text-danger"></span>
+          </div>
+          <div class="mb-3">
+            <label asp-for="SignupIP" class="form-label" for="SignupIP">Signup IP</label>
+            <input asp-for="SignupIP" class="form-control" readonly />
+            <span asp-validation-for="SignupIP" class="text-danger"></span>
+          </div>
+          <button type="submit" class="btn btn-success w-100">Register</button>
+        </form>
+        <div class="text-center mt-3">
+          <a asp-action="Login" class="link-primary">Already have an account?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+@section Scripts {
+  @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+  }
+}
