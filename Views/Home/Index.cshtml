@@ -1,16 +1,19 @@
 @{
-    ViewData["Title"] = "Home";
+    ViewData["Title"] = "Home Page";
 }
 
-<div class="container py-5">
-    <h2 class="mb-4">Welcome</h2>
+@if (ViewBag.IsLoggedIn == true)
+{
+    <p>Welcome! You are now logged in.</p>
+}
+else
+{
+    <p>Welcome! Please log in.</p>
+}
 
-    @if (!string.IsNullOrWhiteSpace(ViewBag.Message))
-    {
-        <div class="alert alert-success">
-            @ViewBag.Message
-        </div>
-    }
-
-    <p>You are now logged in.</p>
-</div>
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-success">
+        @ViewBag.Message
+    </div>
+}

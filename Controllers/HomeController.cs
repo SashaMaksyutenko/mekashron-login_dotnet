@@ -6,7 +6,12 @@ namespace LoginApp.Controllers
     {
         public IActionResult Index()
         {
-            ViewBag.Message = TempData["LoginSuccessMessage"]?.ToString();
+            if (TempData.ContainsKey("LoginSuccessMessage"))
+            {
+                ViewBag.Message = TempData["LoginSuccessMessage"]?.ToString();
+                TempData.Remove("LoginSuccessMessage");
+            }
+            ViewBag.IsLoggedIn = HttpContext.Session.GetString("IsLoggedIn") == "true";
             return View();
         }
     }

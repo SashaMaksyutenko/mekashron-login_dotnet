@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using LoginApp.Models;
 using LoginApp.Services;
 using System.Text.Json;
+using System.IO;
 
 namespace LoginApp.Controllers
 {
@@ -22,42 +23,27 @@ namespace LoginApp.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginModel model)
         {
-            Console.WriteLine("=== Login POST called ===");
-
             if (!ModelState.IsValid)
-    {
-        Console.WriteLine("ModelState invalid:");
-        foreach (var kvp in ModelState)
-        {
-            foreach (var err in kvp.Value.Errors)
-                Console.WriteLine($" - {kvp.Key}: {err.ErrorMessage}");
-        }
-        return View(model);
-    }
+            {
+                return View(model);
+            }
 
             model.IPs = HttpContext.Connection.RemoteIpAddress?.ToString() ?? "";
             var xmlBody = BuildLoginEnvelope(model);
 
-            // Логування запиту
             string loginRequestFilePath = Path.Combine(Directory.GetCurrentDirectory(), $"soap_request_login_{DateTime.Now:yyyyMMddHHmmss}.xml");
             await System.IO.File.WriteAllTextAsync(loginRequestFilePath, xmlBody);
-            Console.WriteLine("=== SOAP CALL finished ===");
 
-            // Виклик SOAP-сервісу
             var xmlResponse = await SoapService.CallAsync("Login", xmlBody);
 
-            // Логування відповіді
             string loginResponseFilePath = Path.Combine(Directory.GetCurrentDirectory(), $"soap_response_login_{DateTime.Now:yyyyMMddHHmmss}.xml");
             await System.IO.File.WriteAllTextAsync(loginResponseFilePath, xmlResponse);
 
-            // Витягування значення з XML-відповіді
             var returnValue = SoapService.ExtractReturnValue(xmlResponse);
 
-            // Обробка помилок
             if (IsErrorResponse(returnValue))
                 return ShowMessage(returnValue, false, model, xmlResponse, returnValue);
 
-            // Обробка JSON-відповіді
             if (IsJson(returnValue))
             {
                 try
@@ -71,6 +57,7 @@ namespace LoginApp.Controllers
 
                     if (success)
                     {
+                        HttpContext.Session.SetString("IsLoggedIn", "true");
                         TempData["LoginSuccessMessage"] = message;
                         return RedirectToAction("Index", "Home");
                     }
@@ -105,25 +92,19 @@ namespace LoginApp.Controllers
             model.SignupIP = HttpContext.Connection.RemoteIpAddress?.ToString() ?? "";
             var xmlBody = BuildRegisterEnvelope(model);
 
-            // Логування запиту
             string registerRequestFilePath = Path.Combine(Directory.GetCurrentDirectory(), $"soap_request_register_{DateTime.Now:yyyyMMddHHmmss}.xml");
             await System.IO.File.WriteAllTextAsync(registerRequestFilePath, xmlBody);
 
-            // Виклик SOAP-сервісу
             var xmlResponse = await SoapService.CallAsync("RegisterNewCustomer", xmlBody);
 
-            // Логування відповіді
             string registerResponseFilePath = Path.Combine(Directory.GetCurrentDirectory(), $"soap_response_register_{DateTime.Now:yyyyMMddHHmmss}.xml");
             await System.IO.File.WriteAllTextAsync(registerResponseFilePath, xmlResponse);
 
-            // Витягування значення з XML-відповіді
             var returnValue = SoapService.ExtractReturnValue(xmlResponse);
 
-            // Обробка помилок
             if (IsErrorResponse(returnValue))
                 return ShowMessage(returnValue, false, model, xmlResponse, returnValue);
 
-            // Обробка JSON-відповіді
             if (IsJson(returnValue))
             {
                 try
@@ -145,7 +126,6 @@ namespace LoginApp.Controllers
             return ShowMessage(returnValue, returnValue.Contains("success"), model, xmlResponse, returnValue);
         }
 
-        // Метод для формування повідомлень
         private static string BuildMessage(string resultMessage, bool success, string operation, int entityId = 0)
         {
             if (!string.IsNullOrWhiteSpace(resultMessage))
@@ -157,7 +137,6 @@ namespace LoginApp.Controllers
             return success ? $"{operation} successful." : $"{operation} failed. No message returned.";
         }
 
-        // Метод для перевірки помилок
         private static bool IsErrorResponse(string value) =>
             string.IsNullOrWhiteSpace(value) ||
             value.StartsWith("Invalid XML response") ||
@@ -165,11 +144,9 @@ namespace LoginApp.Controllers
             value.StartsWith("HTTP Request Error") ||
             value.StartsWith("Error");
 
-        // Метод для перевірки JSON
         private static bool IsJson(string value) =>
             !string.IsNullOrWhiteSpace(value) && value.TrimStart().StartsWith("{");
 
-        // Метод для відображення повідомлень
         private IActionResult ShowMessage(string message, bool success, object model, string rawXml, string rawReturn)
         {
             ViewBag.Message = message;
@@ -179,7 +156,6 @@ namespace LoginApp.Controllers
             return View(model);
         }
 
-        // Метод для формування XML-запиту для логіну
         private static string BuildLoginEnvelope(LoginModel m) => $@"<?xml version=""1.0"" encoding=""utf-8""?>
 <soap:Envelope xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance""
                xmlns:xsd=""http://www.w3.org/2001/XMLSchema""
@@ -193,7 +169,6 @@ namespace LoginApp.Controllers
   </soap:Body>
 </soap:Envelope>";
 
-        // Метод для формування XML-запиту для реєстрації
         private static string BuildRegisterEnvelope(RegisterModel m) => $@"<?xml version=""1.0"" encoding=""utf-8""?>
 <soap:Envelope xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance""
                xmlns:xsd=""http://www.w3.org/2001/XMLSchema""
