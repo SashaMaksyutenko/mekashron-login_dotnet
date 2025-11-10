@@ -6,12 +6,20 @@ namespace LoginApp.Controllers
     {
         public IActionResult Index()
         {
+            bool isLoggedIn = HttpContext.Session.GetString("IsLoggedIn") == "true";
+
+            if (!isLoggedIn)
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             if (TempData.ContainsKey("LoginSuccessMessage"))
             {
                 ViewBag.Message = TempData["LoginSuccessMessage"]?.ToString();
                 TempData.Remove("LoginSuccessMessage");
             }
-            ViewBag.IsLoggedIn = HttpContext.Session.GetString("IsLoggedIn") == "true";
+
+            ViewBag.IsLoggedIn = isLoggedIn;
             return View();
         }
     }
